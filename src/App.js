@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from "./components/Navbar"
 import TextForm from './components/TextForm';
@@ -9,8 +9,7 @@ import About from './components/About';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
@@ -53,10 +52,10 @@ function App() {
         <div className="container my-3">
           <Routes>
             <Route path="/About"
-              element={<About about="About Us" />}>
+              element={<About about="About Us" mode={mode} toggleMode={toggleMode} showAlert={showAlert} />}>
             </Route>
             <Route path="/"
-              element={<TextForm heading="Enter the text" mode={mode} toggleMode={toggleMode} showAlert={showAlert} />
+              element={<TextForm heading="Enter the text" mode={mode} showAlert={showAlert} />
               }></Route>
           </Routes>
         </div>
