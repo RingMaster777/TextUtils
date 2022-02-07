@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div>
 
-      <h2>HOLLA CUMOESTAS</h2>
+      <h1>HELLO</h1>
       
     </div>
   )
